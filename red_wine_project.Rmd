@@ -2,11 +2,12 @@
 title: "Red Wine Exploration"
 author: "David Oguara"
 date: "July 2018"
-output: html_document
+output: md_document
 ---
 
 ```{r setup, include=FALSE}
-
+library(rmarkdown)
+render("red_wine_project.Rmd", output_format = "md_document")
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 ```
 
